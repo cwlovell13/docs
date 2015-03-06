@@ -26,7 +26,9 @@ If you're using the sample project you'll want to update `Constants.cs` to have 
 The sample project includes some example tests in its root directory.
 Lets look at the test suite in `GuineaPigTests.cs`.
 
-The `_Init()` method initializes the browser testing environment by specifying the
+
+//This looks to have been updated to _Setup instead of _Init
+The `_Setup()` method initializes the browser testing environment by specifying the
 browser, version, and platform to test, then creates a
 `RemoteWebDriver` to run the tests remotely.
 
@@ -42,6 +44,7 @@ that makes the test run using a browser on Sauce Labs' servers.
 ## Running tests
 
 (If you downloaded the pre-canned project this is already done for you)
+(Visual Studio Express does not support this)
 
 1. Right-click on the .csproj in the Solution Explorer and select `Properties`
 2. Go to the `Debug` tab
